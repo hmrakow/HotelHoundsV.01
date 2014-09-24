@@ -885,6 +885,15 @@ body.boxed .site-wrapper {
     margin-bottom: 12px;
   }
 }
+
+/*# Heidi's added styles #*/
+.pricingType, .pricingAmt {
+margin: 3px 0;
+border-bottom: 1px dotted silver;
+padding-bottom: 5px;
+font-weight:bold;
+}
+
 /*
 // #Content
 // --------------------------------------------------
