@@ -51,7 +51,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: normal;
   line-height: 1.2em;
   margin: 0 0 1em 0;
@@ -1808,7 +1808,7 @@ cite > span {
   display: block;
   line-height: 1em;
   color: #454545;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   position: relative;
   padding: 0 0 0 20px;
   text-indent: -20px;
@@ -2184,7 +2184,7 @@ cite > span {
 .progress-label {
   font-size: 14px;
   color: #fff;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   float: left;
 }
 h6 + .progress {
