@@ -194,15 +194,16 @@ mixpanel.init("23448f80e7b25f85c147e489aa4a5f73");</script><!-- end Mixpanel -->
 						</div>
 					</div>
 					<div class="row">
-                    	<style type="text/css">
+                    	
+<style type="text/css">
 /* Common elements */
 
 /* Search widget container. Here you can change border, background and text style of the widget */
 .search-widget {
     border-style: solid;
     border-width: 1px;
-    border-color: #cc3f27;
-    background: #f79239;
+    border-color: #000000;
+    background: #333333;
     font-size: 11px;
     text-align: left;
     font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
@@ -250,7 +251,7 @@ mixpanel.init("23448f80e7b25f85c147e489aa4a5f73");</script><!-- end Mixpanel -->
     font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
     font-size: 1.2em !important;
     color: #000000;
-    border: 1px solid #cc3f27;
+    border: 1px solid #050000;
     background: #ffffff url("https://www.travelnow.com/templates/460419/static/0/default/images/widgets/searchwidget/control-bg.jpg") repeat-x left top;
     margin: 0 0 9px 0; /* Bottom indent */
     width: 100%; /* Textboxes and select elements occupy the whole width of appropriate part of search widget */
@@ -277,8 +278,8 @@ mixpanel.init("23448f80e7b25f85c147e489aa4a5f73");</script><!-- end Mixpanel -->
     padding: 2px 9px !important;
     margin: 0 !important;
     cursor: pointer;
-    background: #cc3f27;
-    border: 1px solid #cc3f27 !important;
+    background: #f79239;
+    border: 1px solid #f48529 !important;
     color: #ffffff;
     font-weight: bold;
     font-size: 1.25em;
@@ -294,7 +295,7 @@ mixpanel.init("23448f80e7b25f85c147e489aa4a5f73");</script><!-- end Mixpanel -->
 /* Set custom properties of hovered and selected button. Here you can change background, color and border */
 .search-widget button:hover,
 .search-widget button:focus {
-    background: #cc3f27;
+    background: #f79239;
     color: #ffffff;
 }
 
@@ -359,7 +360,7 @@ mixpanel.init("23448f80e7b25f85c147e489aa4a5f73");</script><!-- end Mixpanel -->
 
 /* Calendar icon (for check-in, check-out fields) */
 .search-widget .calendar-icon {
-    background: url("https://www.travelnow.com/templates/460419/static/12/default/images/widgets/searchwidget/ico-calendar.png") right top no-repeat;
+    background: url("https://www.travelnow.com/templates/460419/static/15/default/images/widgets/searchwidget/ico-calendar.png") right top no-repeat;
     width: 21px;
     height: 22px;
     float: right;
@@ -437,73 +438,66 @@ mixpanel.init("23448f80e7b25f85c147e489aa4a5f73");</script><!-- end Mixpanel -->
         border:none;
         padding:1em;
     }
-
-
-/* 420x348, variant B specific */
+/* 420x348, variant A specific */
 
 /* Set size of widget (2px less because of the border) */
-.size420x348B {
+.size420x348A {
     width: 418px;
     height: 346px;
     font-size: 12px;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border:3px solid #000000;
 }
 
 /* Search widget inner intends */
-.size420x348B .search-widget-inner {
+.size420x348A .search-widget-inner {
     padding: 7px 6px 0 16px;
 }
 
-/* Don't display "Where would you like to go?" label */
-.size420x348B .destination-block label {
+/* Don't display predefined destinations section */
+.size420x348A .predefined-destinations-block {
     display: none;
 }
 
 /* Set sizes for check-in, check-out, rooms, adults, children, hotel chains and star rating sections (they are divided into 3 columns) */
-.size420x348B .check-in-block,
-.size420x348B .check-out-block,
-.size420x348B .rooms-block,
-.size420x348B .adults-block,
-.size420x348B .children-block,
-.size420x348B .hotel-chains-block,
-.size420x348B .star-rating-block {
+.size420x348A .check-in-block,
+.size420x348A .check-out-block,
+.size420x348A .rooms-block,
+.size420x348A .adults-block,
+.size420x348A .children-block,
+.size420x348A .hotel-chains-block,
+.size420x348A .star-rating-block {
     width: 124px;
     padding-right: 8px;
 }
 
 /* Set sizes for check-in, check-out input fields */
-.size420x348B .check-in-block input,
-.size420x348B .check-out-block input {
+.size420x348A .check-in-block input,
+.size420x348A .check-out-block input {
     width: 99px;
 }
 
-/* Place the button to the right of the fields */
-.size420x348B .button-block {
-    float: right;
-    clear: none;
-    margin-top: 15px;
-    margin-right: 10px;
-}
-
 /* Correct sizes for IE7 Quirks Mode (it uses border-box sizing model) */
-* html .size420x348B {
+* html .size420x348A {
     width /**/: 420px;
     height /**/: 348px;
 }
 
-* html .size420x348B .check-in-block,
-* html .size420x348B .check-out-block,
-* html .size420x348B .rooms-block,
-* html .size420x348B .adults-block,
-* html .size420x348B .children-block,
-* html .size420x348B .hotel-chains-block,
-* html .size420x348B .star-rating-block {
+* html .size420x348A .check-in-block,
+* html .size420x348A .check-out-block,
+* html .size420x348A .rooms-block,
+* html .size420x348A .adults-block,
+* html .size420x348A .children-block,
+* html .size420x348A .hotel-chains-block,
+* html .size420x348A .star-rating-block {
     width /**/: 132px;
 }
 
 </style>
 
 
-    <div class="search-widget size420x348B">
+    <div class="search-widget size420x348A">
         <div class="search-widget-inner">
             <div class="predefined-destinations-block">
                 <label for="predefined-destinations">Where would you like to go?:</label>
@@ -674,10 +668,10 @@ mixpanel.init("23448f80e7b25f85c147e489aa4a5f73");</script><!-- end Mixpanel -->
 
 <!-- Loads the YUI Loader.  -->
 
-<script src="https://www.travelnow.com/templates/460419/static/12/default/js/yui2/yuiloader/yuiloader-min.js"><!-- --></script>
+<script src="https://www.travelnow.com/templates/460419/static/15/default/js/yui2/yuiloader/yuiloader-min.js"><!-- --></script>
 
 <!-- Loads the calendar locale. -->
-<script src="https://www.travelnow.com/templates/460419/static/12/default/js/locales/locale_en.js"><!-- --></script>
+<script src="https://www.travelnow.com/templates/460419/static/15/default/js/locales/locale_en.js"><!-- --></script>
 
 <script type="text/javascript">
 
@@ -1279,7 +1273,7 @@ var searchWidgetYahooUIloader = new YAHOO.util.YUILoader({
     // Load compressed version.
     filter: 'min',
 
-    base: 'https://www.travelnow.com/templates/460419/static/12/default/js/yui2/'
+    base: 'https://www.travelnow.com/templates/460419/static/15/default/js/yui2/'
 //    base: 'https://ajax.googleapis.com/ajax/libs/yui/2.8.1/build/'
 });
 
@@ -1291,6 +1285,7 @@ else
     SearchWidget.init(YAHOO);
 
 </script>
+
 					</div>
 
 					<div class="spacer-lg"></div>
