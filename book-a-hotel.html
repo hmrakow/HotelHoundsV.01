@@ -201,12 +201,12 @@ mixpanel.init("23448f80e7b25f85c147e489aa4a5f73");</script><!-- end Mixpanel -->
 .search-widget {
     border-style: solid;
     border-width: 1px;
-    border-color: #704d00;
-    background: #704d00;
+    border-color: #cc3f27;
+    background: #f79239;
     font-size: 11px;
     text-align: left;
     font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
-    color: #f9fcff;
+    color: #ffffff;
     overflow: hidden; /* Cut the content out of the bounds of search-widget */
 }
 
@@ -250,7 +250,7 @@ mixpanel.init("23448f80e7b25f85c147e489aa4a5f73");</script><!-- end Mixpanel -->
     font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
     font-size: 1.2em !important;
     color: #000000;
-    border: 1px solid #704d00;
+    border: 1px solid #cc3f27;
     background: #ffffff url("https://www.travelnow.com/templates/460419/static/0/default/images/widgets/searchwidget/control-bg.jpg") repeat-x left top;
     margin: 0 0 9px 0; /* Bottom indent */
     width: 100%; /* Textboxes and select elements occupy the whole width of appropriate part of search widget */
@@ -277,8 +277,8 @@ mixpanel.init("23448f80e7b25f85c147e489aa4a5f73");</script><!-- end Mixpanel -->
     padding: 2px 9px !important;
     margin: 0 !important;
     cursor: pointer;
-    background: #f98e00;
-    border: 1px solid #f98e00 !important;
+    background: #cc3f27;
+    border: 1px solid #cc3f27 !important;
     color: #ffffff;
     font-weight: bold;
     font-size: 1.25em;
@@ -294,7 +294,7 @@ mixpanel.init("23448f80e7b25f85c147e489aa4a5f73");</script><!-- end Mixpanel -->
 /* Set custom properties of hovered and selected button. Here you can change background, color and border */
 .search-widget button:hover,
 .search-widget button:focus {
-    background: #f98e00;
+    background: #cc3f27;
     color: #ffffff;
 }
 
@@ -359,7 +359,7 @@ mixpanel.init("23448f80e7b25f85c147e489aa4a5f73");</script><!-- end Mixpanel -->
 
 /* Calendar icon (for check-in, check-out fields) */
 .search-widget .calendar-icon {
-    background: url("https://www.travelnow.com/templates/460419/static/7/default/images/widgets/searchwidget/ico-calendar.png") right top no-repeat;
+    background: url("https://www.travelnow.com/templates/460419/static/12/default/images/widgets/searchwidget/ico-calendar.png") right top no-repeat;
     width: 21px;
     height: 22px;
     float: right;
@@ -439,104 +439,75 @@ mixpanel.init("23448f80e7b25f85c147e489aa4a5f73");</script><!-- end Mixpanel -->
     }
 
 
-/* 250x250, variant C specific */
+/* 420x348, variant B specific */
 
-.size250x250C {
-    width: 248px;
-    height: 248px;
+/* Set size of widget (2px less because of the border) */
+.size420x348B {
+    width: 418px;
+    height: 346px;
+    font-size: 12px;
 }
 
-.size250x250C .search-widget-inner {
-    padding: 7px 3px 0 9px;
+/* Search widget inner intends */
+.size420x348B .search-widget-inner {
+    padding: 7px 6px 0 16px;
 }
 
-.size250x250C input[type=text],
-.size250x250C select {
-    margin-bottom: 6px;
-}
-
-.size250x250C .predefined-destinations-block li {
-    width: 50%;
-}
-
-.size250x250C .destination-block label {
+/* Don't display "Where would you like to go?" label */
+.size420x348B .destination-block label {
     display: none;
 }
 
-.size250x250C .check-in-block,
-.size250x250C .check-out-block {
-    width: 107px;
-    padding-right: 11px;
+/* Set sizes for check-in, check-out, rooms, adults, children, hotel chains and star rating sections (they are divided into 3 columns) */
+.size420x348B .check-in-block,
+.size420x348B .check-out-block,
+.size420x348B .rooms-block,
+.size420x348B .adults-block,
+.size420x348B .children-block,
+.size420x348B .hotel-chains-block,
+.size420x348B .star-rating-block {
+    width: 124px;
+    padding-right: 8px;
 }
 
-.size250x250C .check-in-block input,
-.size250x250C .check-out-block input {
-    width: 81px;
+/* Set sizes for check-in, check-out input fields */
+.size420x348B .check-in-block input,
+.size420x348B .check-out-block input {
+    width: 99px;
 }
 
-.size250x250C .rooms-block,
-.size250x250C .hotel-chains-block {
-    width: 65px;
-    padding-right: 7px;
-}
-
-.size250x250C .adults-block,
-.size250x250C .children-block,
-.size250x250C .star-rating-block {
-    width: 73px;
-    padding-right: 7px;
-}
-
-.size250x250C .button-block {
+/* Place the button to the right of the fields */
+.size420x348B .button-block {
     float: right;
     clear: none;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-right: 10px;
 }
 
-.size250x250C .reset-dates-block {
-    display: none;
-}
-
 /* Correct sizes for IE7 Quirks Mode (it uses border-box sizing model) */
-* html .size250x250C {
-    width /**/: 250px;
-    height /**/: 250px;
+* html .size420x348B {
+    width /**/: 420px;
+    height /**/: 348px;
 }
 
-* html .size250x250C .check-in-block,
-* html .size250x250C .check-out-block {
-    width /**/: 118px;
+* html .size420x348B .check-in-block,
+* html .size420x348B .check-out-block,
+* html .size420x348B .rooms-block,
+* html .size420x348B .adults-block,
+* html .size420x348B .children-block,
+* html .size420x348B .hotel-chains-block,
+* html .size420x348B .star-rating-block {
+    width /**/: 132px;
 }
 
-* html .size250x250C .rooms-block {
-    width /**/: 65px;
-}
-
-* html .size250x250C .adults-block,
-* html .size250x250C .children-block {
-    width /**/: 80px;
-}
 </style>
 
 
-    <div class="search-widget size250x250C">
+    <div class="search-widget size420x348B">
         <div class="search-widget-inner">
             <div class="predefined-destinations-block">
                 <label for="predefined-destinations">Where would you like to go?:</label>
                 <ul id="predefined-destinations">
-                            <li>
-                                <input type="radio" class="radio" id="AREA-1e443a3c-5888-4de8-9dbe-742a57ce0475|cities|Cleveland (AREA), OH, United States" name="predefined" value="Cleveland (AREA), OH, United States"/>
-                                <label for="AREA-1e443a3c-5888-4de8-9dbe-742a57ce0475|cities|Cleveland (AREA), OH, United States">Cleveland (AREA)</label>
-                            </li>
-                            <li>
-                                <input type="radio" class="radio" id="AREA-4dd7a0cf-001b-46de-8368-b46c2e48cc30|cities|Fort Lauderdale (AREA), FL, United States" name="predefined" value="Fort Lauderdale (AREA), FL, United States"/>
-                                <label for="AREA-4dd7a0cf-001b-46de-8368-b46c2e48cc30|cities|Fort Lauderdale (AREA), FL, United States">Fort Lauderdale (AREA)</label>
-                            </li>
-                            <li>
-                                <input type="radio" class="radio" id="AREA-5763452f-9be7-47cb-875f-f8e63ff6b9b4|cities|Sandusky, Lakeside, OH, United States" name="predefined" value="Sandusky, Lakeside, OH, United States"/>
-                                <label for="AREA-5763452f-9be7-47cb-875f-f8e63ff6b9b4|cities|Sandusky, Lakeside, OH, United States">Sandusky</label>
-                            </li>
                 </ul>
             </div>
                 <div class="destination-block">
@@ -703,10 +674,10 @@ mixpanel.init("23448f80e7b25f85c147e489aa4a5f73");</script><!-- end Mixpanel -->
 
 <!-- Loads the YUI Loader.  -->
 
-<script src="https://www.travelnow.com/templates/460419/static/7/default/js/yui2/yuiloader/yuiloader-min.js"><!-- --></script>
+<script src="https://www.travelnow.com/templates/460419/static/12/default/js/yui2/yuiloader/yuiloader-min.js"><!-- --></script>
 
 <!-- Loads the calendar locale. -->
-<script src="https://www.travelnow.com/templates/460419/static/7/default/js/locales/locale_en.js"><!-- --></script>
+<script src="https://www.travelnow.com/templates/460419/static/12/default/js/locales/locale_en.js"><!-- --></script>
 
 <script type="text/javascript">
 
@@ -1308,7 +1279,7 @@ var searchWidgetYahooUIloader = new YAHOO.util.YUILoader({
     // Load compressed version.
     filter: 'min',
 
-    base: 'https://www.travelnow.com/templates/460419/static/7/default/js/yui2/'
+    base: 'https://www.travelnow.com/templates/460419/static/12/default/js/yui2/'
 //    base: 'https://ajax.googleapis.com/ajax/libs/yui/2.8.1/build/'
 });
 
