@@ -7,7 +7,7 @@
 	<!-- Basic Page Needs
 	================================================== -->
 	<meta charset="utf-8">
-	<title>Team | PetSitter Responsive HTML5/CSS3 Template</title>
+	<title>Pet Safety Quiz | HotelHounds</title>
 	<meta name="description" content="PetSitter - Responsive HTML5 Template - 1.0">
 	<meta name="author" content="http://themeforest.net/user/dan_fisher">
 
@@ -35,7 +35,25 @@
 	<link rel="stylesheet" href="css/theme-elements.css">
    <link rel="stylesheet" href="css/animate.min.css">
 
-   
+   <!-- FORM: HEAD SECTION -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="http://www.tfaforms.com/form-builder/4.1.0/css/wforms-layout.css" rel="stylesheet" type="text/css" />
+    <!--[if IE 8]>
+        <link href="http://www.tfaforms.com/form-builder/4.1.0/css/wforms-layout-ie8.css" rel="stylesheet" type="text/css" />
+        <![endif]-->
+    <!--[if IE 7]>
+        <link href="http://www.tfaforms.com/form-builder/4.1.0/css/wforms-layout-ie7.css" rel="stylesheet" type="text/css" />
+        <![endif]-->
+    <!--[if IE 6]>
+        <link href="http://www.tfaforms.com/form-builder/4.1.0/css/wforms-layout-ie6.css" rel="stylesheet" type="text/css" />
+        <![endif]-->
+    <link href="http://www.tfaforms.com/themes/get/default" rel="stylesheet" type="text/css" />
+    <link href="http://www.tfaforms.com/form-builder/4.1.0/css/wforms-jsonly.css" rel="alternate stylesheet" title="This stylesheet activated by javascript" type="text/css" />
+    <script type="text/javascript" src="http://www.tfaforms.com/wForms/3.7/js/wforms.js"></script>
+    <script type="text/javascript">
+            wFORMS.behaviors.prefill.skip = false;
+        </script>
+    <script type="text/javascript" src="http://www.tfaforms.com/wForms/3.7/js/localization-en_US.js"></script>
 
    <!-- Head Libs -->
 	<script src="vendor/modernizr.js"></script>
@@ -133,7 +151,7 @@ mixpanel.init("23448f80e7b25f85c147e489aa4a5f73");</script><!-- end Mixpanel -->
 			<nav class="nav-main">
 				<div class="container">
 					<ul data-breakpoint="992" class="flexnav">
-						<li><a href="index.html">Home</a></li>
+						<li class="active"><a href="index.html">Home</a></li>
 						<li><a href="book-a-hotel.html">Book A Hotel</a>
 						</li>
 						<li><a href="sitter-list.html">Find a Sitter</a>
@@ -144,9 +162,9 @@ mixpanel.init("23448f80e7b25f85c147e489aa4a5f73");</script><!-- end Mixpanel -->
 						</li>
 						<li><a href="nearby-events.html">Nearby Events</a>
 						</li>
-						<li class="active"><a href="about-us.html">About Us</a>
+						<li><a href="about-us.html">About Us</a>
 							<ul>
-								<li class="active"><a href="our-team.html">Our Team</a></li>
+								<li><a href="our-team.html">Our Team</a></li>
                                 <li><a href="faqs.html">FAQs</a></li>
 							</ul>
 						</li>
@@ -168,13 +186,13 @@ mixpanel.init("23448f80e7b25f85c147e489aa4a5f73");</script><!-- end Mixpanel -->
 				<div class="container">
 					<div class="row">
 						<div class="col-md-6">
-							<h1>Our Team</h1>
+							<h1>Full Width</h1>
 						</div>
 						<div class="col-md-6">
 							<ul class="breadcrumb">
 								<li><a href="index.html">Home</a></li>
-								<li><a href="about-us.html">About Us</a></li>
-								<li class="active">Our Team</li>
+								<li><a href="#">Pages</a></li>
+								<li class="active">Full Width</li>
 							</ul>
 						</div>
 					</div>
@@ -185,106 +203,160 @@ mixpanel.init("23448f80e7b25f85c147e489aa4a5f73");</script><!-- end Mixpanel -->
 			<!-- Page Content -->
 			<section class="page-content">
 				<div class="container">
+
 					
-					<ul class="team-list row">
-						<li class="team-item col-md-3">
-							<div class="team-item-inner">
-								<figure class="team-thumb">
-									<img src="http://placehold.it/288x268" alt="">
-								
-									<div class="overlay"></div>
-								
-									<ul class="team-social list-unstyled">
-								    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-										<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-									</ul>
-								
-								</figure>
-								<header class="team-head">
-									<h5 class="team-name">John Doe</h5>
-									<span class="team-head-info">CEO</span>
-								</header>
-								<div class="team-excerpt">
-									Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
-									Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
-								</div>
-							</div>
-						</li>
-						<li class="team-item col-md-3">
-							<div class="team-item-inner">
-								<figure class="team-thumb">
-									<img src="http://placehold.it/288x268" alt="">
-								
-									<div class="overlay"></div>
-								
-									<ul class="team-social list-unstyled">
-								    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-										<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-									</ul>
-								
-								</figure>
-								<header class="team-head">
-									<h5 class="team-name">Michael Smith</h5>
-									<span class="team-head-info">Web Designer</span>
-								</header>
-								<div class="team-excerpt">
-									Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
-									Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
-								</div>
-							</div>
-						</li>
-						<li class="team-item col-md-3">
-							<div class="team-item-inner">
-								<figure class="team-thumb">
-									<img src="http://placehold.it/288x268" alt="">
-								
-									<div class="overlay"></div>
-								
-									<ul class="team-social list-unstyled">
-								    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-										<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-									</ul>
-								
-								</figure>
-								<header class="team-head">
-									<h5 class="team-name">Sasha Gray</h5>
-									<span class="team-head-info">PHP Developer</span>
-								</header>
-								<div class="team-excerpt">
-									Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
-									Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
-								</div>
-							</div>
-						</li>
-						<li class="team-item col-md-3">
-							<div class="team-item-inner">
-								<figure class="team-thumb">
-									<img src="http://placehold.it/288x268" alt="">
-								
-									<div class="overlay"></div>
-								
-									<ul class="team-social list-unstyled">
-								    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-										<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-									</ul>
-								
-								</figure>
-								<header class="team-head">
-									<h5 class="team-name">Hanna Doe</h5>
-									<span class="team-head-info">HTML Coder</span>
-								</header>
-								<div class="team-excerpt">
-									Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
-									Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
-								</div>
-							</div>
-						</li>
-						
-					</ul>
+<!-- FORM: BODY SECTION -->
+<div class="wFormContainer"  >
+  <div class="">
+    <div class="wForm" id="tfa_0-WRPR" dir="ltr">
+      <div class="codesection" id="code-tfa_0"></div>
+      <h3 class="wFormTitle" id="tfa_0-T">Pet Safety Quiz</h3>
+      <form method="post" action="http://www.tfaforms.com/responses/processor" class="hintsBelow labelsAbove" id="tfa_0">
+        <div id="tfa_44-D" class="oneField    hintsBelow">
+          <label id="tfa_44-L" for="tfa_44" class="label preField reqMark">Email address</label>
+          <br>
+          <div class="inputWrapper">
+            <input type="text" id="tfa_44" name="tfa_44" value="" placeholder="" class="validate-email required">
+            <span class="field-hint-inactive" id="tfa_44-H"><span id="tfa_44-HH" class="hint">Must use the same email address used in Sitter Sign-up</span></span> </div>
+        </div>
+        <div id="tfa_1-D" class="oneField    ">
+          <label id="tfa_1-L" for="tfa_1" class="label preField reqMark">1. &nbsp;Many people give their dogs fruit; however, just a few bites of this fruit can cause kidney failure in some dogs.&nbsp; </label>
+          <br>
+          <div class="inputWrapper"><span id="tfa_1" class="choices vertical required"><span class="oneChoice">
+            <input type="radio" value="tfa_3" class="" id="tfa_3" name="tfa_1">
+            <label class="label postField" id="tfa_3-L" for="tfa_3">Grapes</label>
+            </span><span class="oneChoice">
+            <input type="radio" value="tfa_5" class="" id="tfa_5" name="tfa_1">
+            <label class="label postField" id="tfa_5-L" for="tfa_5">Apples</label>
+            </span><span class="oneChoice">
+            <input type="radio" value="tfa_6" class="" id="tfa_6" name="tfa_1">
+            <label class="label postField" id="tfa_6-L" for="tfa_6">Strawberries</label>
+            </span><span class="oneChoice">
+            <input type="radio" value="tfa_7" class="" id="tfa_7" name="tfa_1">
+            <label class="label postField" id="tfa_7-L" for="tfa_7">Bananas</label>
+            </span></span></div>
+        </div>
+        <div id="tfa_13-D" class="oneField    ">
+          <label id="tfa_13-L" for="tfa_13" class="label preField reqMark">2. &nbsp;Dogs who eat this might become very ill from alcohol poison</label>
+          <br>
+          <div class="inputWrapper"><span id="tfa_13" class="choices vertical required"><span class="oneChoice">
+            <input type="radio" value="tfa_14" class="" id="tfa_14" name="tfa_13">
+            <label class="label postField" id="tfa_14-L" for="tfa_14">Grape Jelly</label>
+            </span><span class="oneChoice">
+            <input type="radio" value="tfa_15" class="" id="tfa_15" name="tfa_13">
+            <label class="label postField" id="tfa_15-L" for="tfa_15">Applesauce</label>
+            </span><span class="oneChoice">
+            <input type="radio" value="tfa_16" class="" id="tfa_16" name="tfa_13">
+            <label class="label postField" id="tfa_16-L" for="tfa_16">Oatmeal</label>
+            </span><span class="oneChoice">
+            <input type="radio" value="tfa_17" class="" id="tfa_17" name="tfa_13">
+            <label class="label postField" id="tfa_17-L" for="tfa_17">Bread Dough</label>
+            </span></span></div>
+        </div>
+        <div id="tfa_18-D" class="oneField    ">
+          <label id="tfa_18-L" for="tfa_18" class="label preField reqMark">3. &nbsp;Consumption of these nuts can cause temporary paralysis of the back legs of some dogs</label>
+          <br>
+          <div class="inputWrapper"><span id="tfa_18" class="choices vertical required"><span class="oneChoice">
+            <input type="radio" value="tfa_19" class="" id="tfa_19" name="tfa_18">
+            <label class="label postField" id="tfa_19-L" for="tfa_19">Peanuts</label>
+            </span><span class="oneChoice">
+            <input type="radio" value="tfa_20" class="" id="tfa_20" name="tfa_18">
+            <label class="label postField" id="tfa_20-L" for="tfa_20">Cashews</label>
+            </span><span class="oneChoice">
+            <input type="radio" value="tfa_21" class="" id="tfa_21" name="tfa_18">
+            <label class="label postField" id="tfa_21-L" for="tfa_21">Pecans</label>
+            </span><span class="oneChoice">
+            <input type="radio" value="tfa_22" class="" id="tfa_22" name="tfa_18">
+            <label class="label postField" id="tfa_22-L" for="tfa_22">Macadamia Nuts</label>
+            </span></span></div>
+        </div>
+        <div id="tfa_23-D" class="oneField    ">
+          <label id="tfa_23-L" for="tfa_23" class="label preField reqMark">4. &nbsp;Raw chicken bones are more dangerous to dogs than cooked ones</label>
+          <br>
+          <div class="inputWrapper"><span id="tfa_23" class="choices vertical required"><span class="oneChoice">
+            <input type="radio" value="tfa_24" class="" id="tfa_24" name="tfa_23">
+            <label class="label postField" id="tfa_24-L" for="tfa_24">True</label>
+            </span><span class="oneChoice">
+            <input type="radio" value="tfa_25" class="" id="tfa_25" name="tfa_23">
+            <label class="label postField" id="tfa_25-L" for="tfa_25">False</label>
+            </span></span></div>
+        </div>
+        <div id="tfa_26-D" class="oneField    ">
+          <label id="tfa_26-L" for="tfa_26" class="label preField reqMark">5. &nbsp;Consumption of this can cause life-threatening anemia in dogs</label>
+          <br>
+          <div class="inputWrapper"><span id="tfa_26" class="choices vertical required"><span class="oneChoice">
+            <input type="radio" value="tfa_27" class="" id="tfa_27" name="tfa_26">
+            <label class="label postField" id="tfa_27-L" for="tfa_27">Oranges</label>
+            </span><span class="oneChoice">
+            <input type="radio" value="tfa_28" class="" id="tfa_28" name="tfa_26">
+            <label class="label postField" id="tfa_28-L" for="tfa_28">Carrots</label>
+            </span><span class="oneChoice">
+            <input type="radio" value="tfa_29" class="" id="tfa_29" name="tfa_26">
+            <label class="label postField" id="tfa_29-L" for="tfa_29">Onions</label>
+            </span><span class="oneChoice">
+            <input type="radio" value="tfa_30" class="" id="tfa_30" name="tfa_26">
+            <label class="label postField" id="tfa_30-L" for="tfa_30">Broccoli</label>
+            </span></span></div>
+        </div>
+        <div id="tfa_31-D" class="oneField    ">
+          <label id="tfa_31-L" for="tfa_31" class="label preField reqMark">6. &nbsp;Daffodils contain poisonous alkaloids and can cause vomiting, tremors and heart problems in dogs</label>
+          <br>
+          <div class="inputWrapper"><span id="tfa_31" class="choices vertical required"><span class="oneChoice">
+            <input type="radio" value="tfa_32" class="" id="tfa_32" name="tfa_31">
+            <label class="label postField" id="tfa_32-L" for="tfa_32">True</label>
+            </span><span class="oneChoice">
+            <input type="radio" value="tfa_33" class="" id="tfa_33" name="tfa_31">
+            <label class="label postField" id="tfa_33-L" for="tfa_33">False</label>
+            </span></span></div>
+        </div>
+        <div id="tfa_34-D" class="oneField    ">
+          <label id="tfa_34-L" for="tfa_34" class="label preField reqMark">7. &nbsp;All of the following foods except this is harmful to dogs</label>
+          <br>
+          <div class="inputWrapper"><span id="tfa_34" class="choices vertical required"><span class="oneChoice">
+            <input type="radio" value="tfa_35" class="" id="tfa_35" name="tfa_34">
+            <label class="label postField" id="tfa_35-L" for="tfa_35">Avocados</label>
+            </span><span class="oneChoice">
+            <input type="radio" value="tfa_36" class="" id="tfa_36" name="tfa_34">
+            <label class="label postField" id="tfa_36-L" for="tfa_36">Raisins</label>
+            </span><span class="oneChoice">
+            <input type="radio" value="tfa_37" class="" id="tfa_37" name="tfa_34">
+            <label class="label postField" id="tfa_37-L" for="tfa_37">Green Beans</label>
+            </span><span class="oneChoice">
+            <input type="radio" value="tfa_38" class="" id="tfa_38" name="tfa_34">
+            <label class="label postField" id="tfa_38-L" for="tfa_38">Chocolate</label>
+            </span></span></div>
+        </div>
+        <div id="tfa_39-D" class="oneField    ">
+          <label id="tfa_39-L" for="tfa_39" class="label preField reqMark">8. &nbsp;All but one of these houseplants is dangerous to dogs</label>
+          <br>
+          <div class="inputWrapper"><span id="tfa_39" class="choices vertical required"><span class="oneChoice">
+            <input type="radio" value="tfa_40" class="" id="tfa_40" name="tfa_39">
+            <label class="label postField" id="tfa_40-L" for="tfa_40">Dieffenbachia</label>
+            </span><span class="oneChoice">
+            <input type="radio" value="tfa_41" class="" id="tfa_41" name="tfa_39">
+            <label class="label postField" id="tfa_41-L" for="tfa_41">Zinnia</label>
+            </span><span class="oneChoice">
+            <input type="radio" value="tfa_42" class="" id="tfa_42" name="tfa_39">
+            <label class="label postField" id="tfa_42-L" for="tfa_42">English Ivy</label>
+            </span><span class="oneChoice">
+            <input type="radio" value="tfa_43" class="" id="tfa_43" name="tfa_39">
+            <label class="label postField" id="tfa_43-L" for="tfa_43">Jade Plant</label>
+            </span></span></div>
+        </div>
+        <div class="actions" id="tfa_0-A">
+          <input type="submit" class="primaryAction" value="Submit">
+        </div>
+        <div style="clear:both"></div>
+        <input type="hidden" value="350600" name="tfa_dbFormId" id="tfa_dbFormId">
+        <input type="hidden" value="" name="tfa_dbResponseId" id="tfa_dbResponseId">
+        <input type="hidden" value="84503bced31461a29f8ba4833e6ae53b" name="tfa_dbControl" id="tfa_dbControl">
+        <input type="hidden" value="5" name="tfa_dbVersionId" id="tfa_dbVersionId">
+        <input type="hidden" value="" name="tfa_switchedoff" id="tfa_switchedoff">
+      </form>
+    </div>
+  </div>
+  <p class="supportInfo" > <a href="http://www.tfaforms.com/forms/help/350600" target="new" style="font-size: 0.7em;"> Need assistance with this form? </a> </p>
+</div>
 
 				</div>
 			</section>

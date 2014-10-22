@@ -607,7 +607,7 @@ a.thumbnail.active {
   text-align: center;
   overflow: hidden;
 }
-.img-box:before {
+/*.img-box:before {
   content: "";
   display: block;
   position: absolute;
@@ -659,7 +659,7 @@ a.thumbnail.active {
   .img-box img {
     max-width: 100%;
   }
-}
+}*/
 /* Video Holder */
 .video-holder {
   padding: 6px;
@@ -2337,4 +2337,13 @@ hr.no-top-margin {
   display: inline-block;
   padding-left: 5px;
   padding-right: 5px;
+}
+
+
+/* Form Assembly Styles */
+.wForm .label {
+color: #8c8c8c;
+text-align: left;
+line-height:1.75;
+white-space: normal;
 }
