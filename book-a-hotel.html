@@ -7,7 +7,7 @@
 	<!-- Basic Page Needs
 	================================================== -->
 	<meta charset="utf-8">
-	<title>404 | PetSitter Responsive HTML5/CSS3 Template</title>
+	<title>HotelHounds | Book a Pet Friendly Hotel</title>
 	<meta name="description" content="PetSitter - Responsive HTML5 Template - 1.0">
 	<meta name="author" content="http://themeforest.net/user/dan_fisher">
 
@@ -143,7 +143,7 @@ mixpanel.init("23448f80e7b25f85c147e489aa4a5f73");</script><!-- end Mixpanel -->
                                   
                             </ul>
 						</li>
-						<li><a href="nearby-events.html">Nearby Events</a>
+						<li><a href="nearby-events.html">Pet Friendly Spots</a>
 						</li>
 						<li><a href="about-us.html">About Us</a>
 							<ul>
@@ -197,518 +197,6 @@ mixpanel.init("23448f80e7b25f85c147e489aa4a5f73");</script><!-- end Mixpanel -->
                     	
 
 
-
-<style type="text/css">
-#searchForm {font-size:12px; font-family: Arial, Helvetica,sans-serif;color: black;width:450px;border: black 1px solid; background:white;padding:0;margin: 0;} /*primary font color*/
-#searchForm form,#searchForm img {margin: 0;padding:0;border:0;}
-#searchForm input,#searchForm select {background: white;padding: 1px 2px;font-size:12px; font-family: Arial, Helvetica,sans-serif;color: black;border:black 1px solid;} /* input box inside font color and outside border color */
-#searchForm input.city {width: 175px;}
-#searchForm input.date {width: 100px;}
-#searchForm img.calendar {margin: 0; padding:0 2px; vertical-align: text-bottom;}
-#searchForm p.masterHEADER {background: gray; color:white; font-weight: bold; font-size: 13px;margin:0;padding:5px;text-align: center;} /* HOTEL SEARCH background and font color */
-#searchForm div#hot-search-params {float:left;}
-#searchForm div#hot-search-params table {font-size: 12px;}
-#searchForm div#hot-search-params td {padding-bottom:2px;}
-#searchForm .insideContainer {margin:0;padding:7px;}
-#searchForm .insideContainer table {margin: 0;padding: 0;border-collapse: collapse;width: 98%;}
-#searchForm .insideContainer table div#hot-search-params table td {padding-right: 7px;}
-#searchForm .button {color: white;border: black 1px solid;cursor:hand;background:green;text-decoration:none;padding: 3px;margin: 0 2px 0 0;float: right;} /* search button text, border and background*/
-#searchForm fieldset {margin: 0;padding: 0;border: 0;}
-#searchForm fieldset.city {float:left;padding-right:10px;}
-#searchForm fieldset.date {float:left;}
-#searchForm fieldset.nights {float: right;}
-.clearFix:after{content: ".";display: block;height: 0;clear: both;visibility: hidden;}
-.clearFix {display: inline-block;}
-* html .clearFix {height: 1%;}
-.clearFix {display: block;}
-</style>
-<form name="myForm" method="get" action="http://travel.ian.com/index.jsp" onSubmit="javascript:return group();">
-<input type="hidden" name="cid" value="460419"> <!-- change to your cid -->
-<input type="hidden" name="pageName" value="hotSearch">
-<input type="hidden" name="validateDates" value="true">
-<input type="hidden" name="validateCity" value="true">
-<input type="hidden" name="submitted" value="true">
-<input type="hidden" name="arrivalMonth" value="">
-<input type="hidden" name="departureMonth" value="">
-<input type="hidden" name="arrivalDay" value="">
-<input type="hidden" name="departureDay" value="">
-<input type="hidden" name="mode" value="2">
-<input type="hidden" name="avail" value="true">
-<input type="hidden" name="passThrough" value="true">
-<input type="hidden" name="propertyType" value="A">
-<input type="hidden" name="locale" value="en_US">
-
-<div id="searchForm">
-	<p class="masterHEADER">HOTEL SEARCH</p>
-	<div class="insideContainer clearFix">
-		<fieldset class="city">
-			<label for="city">City<br /><input name="city" class="city"></label>
-		</fieldset>
-		<fieldset class="date">
-			<label>Check in<br /><input name="dateField" class="date"> <a onMouseOver="window.status ='';return true;" onMouseOut="window.status='';return true;" href="javascript:openCalendar('myForm', 'dateField');" ><img src="http://travel.ian.com/BU40/_media/icons/calendar.gif" align="top"></a></label>
-		</fieldset>
-		<fieldset class="nights">
-			<label>Nights<br />
-			<select NAME="numberOfNights">
-                <option value="1" selected="selected">1</option>
-				<option value="2">2</option>
-				<option value="3">3</option>
-				<option value="4">4</option>
-				<option value="5">5</option>
-				<option value="6">6</option>
-				<option value="7">7</option>
-				<option value="8">8</option>
-				<option value="9">9</option>
-				<option value="10">10</option>
-				<option value="11">11</option>
-				<option value="12">12</option>
-				<option value="13">13</option>
-				<option value="14">14</option>
-				<option value="15">15</option>
-				<option value="16">16</option>
-				<option value="17">17</option>
-				<option value="18">18</option>
-				<option value="19">19</option>
-				<option value="20">20</option>
-				<option value="21">21</option>
-				<option value="22">22</option>
-				<option value="23">23</option>
-				<option value="24">24</option>
-				<option value="25">25</option>
-				<option value="26">26</option>
-				<option value="27">27</option>
-				<option value="28">28</option>
-				<option value="29">29</option>
-				<option value="30">30</option>
-            </select></label>
-		</fieldset>
-	</div>
-	<div class="insideContainer clearFix">
-		<table>
-			<tr>
-				<td><div id="hot-search-params"></div></td>
-				<td valign="bottom"><input type="submit" value="Search" class="button"></td>
-			</tr>
-		</table>
-	</div>
-	<img src="http://travel.ian.com/images/p.gif" width="0" height="0" onload="initializeDates();">
-</div>
-</form>
-<script language="javascript">
-<!--
-    function initializeDates(){
-        var d = new Date();
-        d.setMonth(d.getMonth(), d.getDate()+14);
-        
-          document.forms['myForm'].elements['dateField'].value = getFormattedMonth(d.getMonth()) + "/" + getFormattedDay(d.getDate()) + "/" + d.getFullYear();
-        
-    }
-    
-	function travelNowize() {
-		// travelnow provided this code which takes the "dateField" and "numberOfNights" and does the math
-		// to get a checkin and checkout date
-
-		var intNight = document.forms['myForm'].numberOfNights.value;
-		var dt = new Date(document.forms['myForm'].dateField.value);
-          var adt = new Date(dt.getFullYear(), dt.getMonth(), dt.getDate()+(document.forms['myForm'].numberOfNights.selectedIndex+1) );
-
-        document.forms['myForm'].departureDay.value = adt.getDate();
-        document.forms['myForm'].departureMonth.value = adt.getMonth();
-        document.forms['myForm'].arrivalDay.value = dt.getDate();
-        document.forms['myForm'].arrivalMonth.value = dt.getMonth();
-	}
-     
-
-    function group() {
-        if (document.myForm.numberOfRooms.selectedIndex == 8) {
-            window.location="http://travel.ian.com/index.jsp?pageName=groups&cid=460419&locale=en_US";
-            return false;
-        } else {
-            travelNowize();
-            return true;
-        }
-    }
-    //-->
-</script>
-<!-- Calendar Code -->
-<script langauage="javascript">
-<!--
-function getFormattedMonth(themonth) {
-	if (themonth < 9) {
-		switch(themonth) {
-		 case 0: return '01';
-		 case 1: return '02';
-		 case 2: return '03';
-		 case 3: return '04';
-		 case 4: return '05';
-		 case 5: return '06';
-		 case 6: return '07';
-		 case 7: return '08';
-		 case 8: return '09';
-		}
-	}
-	return themonth+1;
-}
-function getFormattedDay(theday) {
-	if (theday < 10) {
-		switch(theday) {
-		 case 1: return '01';
-		 case 2: return '02';
-		 case 3: return '03';
-		 case 4: return '04';
-		 case 5: return '05';
-		 case 6: return '06';
-		 case 7: return '07';
-		 case 8: return '08';
-   		 case 9: return '09';
-		}
-	}
-	return theday;
-}
-function update(themonth,theday,theyear){
-     
-     document.forms[fName].elements['dateField'].value = getFormattedMonth(themonth) + "/" + getFormattedDay(theday) + "/" + theyear;
-     
-    testWindow.close();
-}
-function loadCalendar(viewMonth) {
-	testWindow.document.close();
-	testWindow.document.open();
-
-	var day_of_week = new Array("Sun","Mon","Tue","Wed","Thu","Fri","Sat");
-	var month_of_year = new Array("January","February","March","April","May","June","July","August","September","October","November","December");
-
-	var dateObj = new Date();
-	var year = dateObj.getFullYear();	 // Returns year
-	var month = dateObj.getMonth();  // Returns month (0-11)
-	var today = dateObj.getDate();   // Returns day (1-31)
-	var weekday = dateObj.getDay();  // Returns day (1-31)
-
-	var DAYS_OF_WEEK = 7;   // "constant" for number of days in a week
-	var DAYS_OF_MONTH = 31; // "constant" for number of days in a month
-	var cal;                // Used for printing
-
-	if (viewMonth < month) {
-		year = year + 1;
-	}
-
-	if(year < 1900){
-		year += 1900; //done to solve the problem of netscape and mozilla returning year in form 10X for years > 2000
-	}
-
-	month = viewMonth;
-	dateObj.setDate(1);      // Start the calendar day at '1'
-	dateObj.setMonth(month); // Start the calendar month at now
-	dateObj.setFullYear((year));
-
-	// VARIABLES FOR FORMATTING
-	var TR_start = '<TR>';
-	var TR_end = '</TR>';
-	var highlight_start = '<TD WIDTH="30"><TABLE CELLSPACING=0 BORDER=1 BORDERCOLOR=CCCCCC><TR><TD WIDTH=20><B><CENTER>';
-	var highlight_end   = '</CENTER></TD></TR></TABLE></B>';
-	var TD_start = '<TD WIDTH="30"><CENTER>';
-	var TD_end = '</CENTER></TD>';
-	var prevM = month - 1;
-	var nextM = month + 1;
-
-	if (nextM == 12) {
-		nextM = 0;
-	}
-
-	if (prevM == -1) {
-		prevM = 11;
-	}
-
-	// BEGIN CODE FOR CALENDAR
-	cal =  '<html><head><title>Calendar</title></head><body>';
-	cal += '<style>a{cursor: hand}body,table,td{cursor: default;font-family:sans-serif;font-size:12px;color:black;}p.masterHEADER {background: gray; color:white; font-weight: bold; font-size: 13px;margin:0;padding:5px;text-align: center;}</style>';
-    cal += '<div style="border:black 1px solid;">';
-	cal += '<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="2" width="100%">' + TR_start;
-	cal += '<TD COLSPAN="' + DAYS_OF_WEEK + '"><p class=masterHEADER>';
-	cal += month_of_year[month] + '   ' + year + '</p>' + TD_end + TR_end;
-	cal += TR_start;
-
-    ///////////////////////////////////
-    // DO NOT EDIT BELOW THIS POINT  //
-    ///////////////////////////////////
-
-	// LOOPS FOR EACH DAY OF WEEK
-	for(index=0; index < DAYS_OF_WEEK; index++) {
-        // PRINTS DAY
-        cal += TD_start + day_of_week[index] + TD_end;
-	}
-
-	cal += TD_end + TR_end;
-	cal += TR_start;
-
-	// FILL IN BLANK GAPS UNTIL TODAY'S DAY
-	for(index=0; index < dateObj.getDay(); index++) {
-	    cal += TD_start + '  ' + TD_end;
-    }
-
-	// LOOPS FOR EACH DAY IN CALENDAR
-    for(index=0; index < DAYS_OF_MONTH; index++) {
-        if( dateObj.getDate() > index ) {
-            // RETURNS THE NEXT DAY TO PRINT
-            week_day =dateObj.getDay();
-
-            // START NEW ROW FOR FIRST DAY OF WEEK
-            if(week_day == 0) {
-                cal += TR_start;
-            }
-
-            if(week_day != DAYS_OF_WEEK) {
-                // SET VARIABLE INSIDE LOOP FOR INCREMENTING PURPOSES
-                var day  = dateObj.getDate();
-
-                // PRINTS DAY
-                cal += TD_start + "<span onclick='window.opener.update(" + month + "," + day + "," + year +")'>" + day + "</span>" + TD_end;
-            }
-
-            // END ROW FOR LAST DAY OF WEEK
-            if(week_day == DAYS_OF_WEEK) {
-                cal += TR_end;
-            }
-        }
-
-        // INCREMENTS UNTIL END OF THE MONTH
-        dateObj.setDate(dateObj.getDate()+1);
-
-    }// end for loop
-	cal += '</td></TR></TABLE></div><br>';
-    cal += '<div align="center"><a href="javascript:" onClick="window.opener.loadCalendar(' + prevM + ');"><<</a>    ';
-	cal += '<a href="javascript:" onClick="window.opener.loadCalendar(' + nextM + ');">>></a></div>';
-	cal += '<a href="javascript:window.close();" style="float:right">close</a>';
-	cal += '</body></html>';
-	//  PRINT CALENDAR
-	testWindow.document.write(cal);
-}
-
-var testWindow;
-var fieldName;
-var fName;
-
-function openCalendar(formName, field) {
-	fieldName=field;
-	fName=formName;
-	testWindow = window.open('','dates','width=300,height=225,resizable=1,status=1,menubar=0,location=0');
-	var month = document.forms[fName].elements[fieldName].value;
-     
-     
-     
-	     var dateRegExp = new RegExp("^(([1][0-2])|([0]?[1-9]))/(([0123]?[0-9])|[0-9])(/((20)?[0-9]{2}))?"); //looks for mm/dd
-        if (month.match(dateRegExp)) {
-            month = document.forms[fName].elements[fieldName].value.split("/")[0] - 1;
-        } else {
-            month = new Date().getMonth();
-        }
-     
-	loadCalendar(month);
-}
-//-->
-</script>
-<!-- /Calendar Code -->
-<!-- my custom search box -->
-<script language="javascript">
-<!--
-    // NOTE: customize variables in this javascript block as appropriate.
-    var defaultAdults="2";
-    var cellStyle="";
-    var childHelp="<p style=font-size:11px;>Please provide the ages of children in each room. Children's ages should be their age at the time of travel.</p>";
-    var adultHelp="";
-    var textRooms="Rooms:";
-    var textAdults="Adults: (age 19+)";
-    var textChildren="Children: (0-18)";
-    var textChildError="Please specify the ages of all children.";
-    var pad='<img src="http://travel.ian.com/images/p.gif" width="5" height="1">';
-    // NOTE: Question marks ("?") get replaced with a numeric value
-    var textRoomX="Room ?:";
-    var textChildX="Child ?:";
-//-->
-</script>
-<!-- NOTE: DO NOT MODIFY THIS JAVASCRIPT BLOCK -->
-<script language="javascript">
-<!--
-    var adultsPerRoom=new Array(defaultAdults);
-    var childrenPerRoom=new Array();
-    var childAgesPerRoom=new Array();
-    var numRooms=1;
-    var maxChildren=0;
-    refresh();
-    function setChildAge(room, child, age) {
-        if (childAgesPerRoom[room] == null) {
-            childAgesPerRoom[room] = new Array();
-        }
-        childAgesPerRoom[room][child] = age;
-    }
-    function setNumAdults(room, numAdults) {
-        adultsPerRoom[room] = numAdults;
-    }
-    function setNumChildren(room, numChildren) {
-        childrenPerRoom[room] = numChildren;
-        refresh();
-    }
-    function setNumRooms(x) {
-        numRooms = x;
-        for (i = 0; i < x; i++) {
-            if (adultsPerRoom[i] == null) {
-                adultsPerRoom[i] = 2;
-            }
-            if (childrenPerRoom[i] == null) {
-                childrenPerRoom[i] = 0;
-            }
-        }
-        refresh();
-    }
-    function renderRoomSelect() {
-        var x = '';
-        x += '<select name="numberOfRooms" onchange="setNumRooms(this.options[this.selectedIndex].value);">';
-        for (var i = 1; i < 9; i++) {
-            x += '<option value="'+i+'"'+(numRooms == i ? ' selected' : '')+'>' + i;
-        }
-        x += '<option value="9"'+(numRooms == 9 ? ' selected' : '')+'>9+';
-        x += '</select>';
-        return x;
-    }
-    function refresh() {
-        maxChildren = 0;
-        for (var i = 0; i < numRooms; i++) {
-            if (childrenPerRoom[i] > maxChildren) {
-                maxChildren = childrenPerRoom[i];
-            }
-        }
-
-        var x = '';
-        if (adultHelp.length > 0) {
-            x = adultHelp + "<p>\n";
-        }
-        if (numRooms > 8) {
-            x += textRooms;
-            x += renderRoomSelect();
-
-        } else {
-            x += '<table border="0" cellspacing="2" cellpadding="0">\n';
-            x += '<tr><td'+cellStyle+'>'+textRooms+pad+'</td>';
-            if (numRooms >= 1) {
-                x += '<td'+cellStyle+'> </td>';
-            }
-            x += '<td'+cellStyle+'><nobr>'+textAdults+pad+'</nobr></td><td'+cellStyle+'><nobr>'+textChildren+pad+'</nobr></td></tr>\n';
-            for (var i = 0; i < numRooms; i++) {
-                x += '<tr><td'+cellStyle+'>';
-                if (i == 0) {
-                    x += renderRoomSelect();
-                } else {
-                    x += ' ';
-                }
-                x += '</td>';
-                if (numRooms >= 1) {
-                    x += '<td'+cellStyle+'><nobr>'+getValue(textRoomX, i+1)+pad + '</nobr></td>';
-                }
-                x += '<td'+cellStyle+'>';
-                x += buildSelect('room-' + i + '-adult-total', 'setNumAdults(' + i + ', this.options[this.selectedIndex].value)', 1, 4, adultsPerRoom[i]);
-                x += '</td><td'+cellStyle+'>';
-                x += buildSelect('room-' + i + '-child-total', 'setNumChildren(' + i + ', this.options[this.selectedIndex].value)', 0, 5, childrenPerRoom[i]);
-                x += '</td></tr>\n';
-            }
-            x += '</table>\n';
-
-            var didHeader = false;
-            for (var i = 0; i < numRooms; i++) {
-                if (childrenPerRoom[i] > 0) {
-                    if (!didHeader) {
-                        x += '<table border="0" cellpadding="0" cellspacing="2">\n';
-                        x += '<tr><td'+cellStyle+' colspan="'+(maxChildren+1)+'">';
-                        x += '<img src="/images/p.gif" width="1" height="5"><br>';
-                        x += childHelp;
-                        x += '<img src="/images/p.gif" width="1" height="5"><br>';
-                        x += '</td></tr>\n<tr><td'+cellStyle+'> </td>';
-                        for (var j = 0; j < maxChildren; j++) {
-                            x += '<td'+cellStyle+'><nobr>'+getValue(textChildX, j+1)+pad+'</nobr></td>\n';
-                        }
-                        didHeader = true;
-                    }
-                    x += '</tr>\n<tr><td'+cellStyle+'><nobr>'+getValue(textRoomX, i+1)+pad+'</nobr></td>';
-                    for (var j = 0; j < childrenPerRoom[i]; j++) {
-                        x += '<td'+cellStyle+'>';
-                        var def = -1;
-                        if (childAgesPerRoom[i] != null) {
-                            if (childAgesPerRoom[i][j] != null) {
-                                def = childAgesPerRoom[i][j];
-                            }
-                        }
-                        x += '<select name="room-'+i+'-child-'+j+'-age" onchange="setChildAge('+i+', '+j+', this.options[this.selectedIndex].value);">';
-                        x += '<option value="-1"'+(def == -1 ? ' selected' : '')+'>-?-';
-                        x += '<option value="0"'+(def == 0 ? ' selected' : '')+'><1';
-                        for (var k = 1; k <= 18; k++) {
-                            x += '<option value="'+k+'"'+(def == k ? ' selected' : '')+'>'+k;
-                        }
-                        x += '</td>';
-                    }
-                    if (childrenPerRoom[i] < maxChildren) {
-                        for (var j = childrenPerRoom[i]; j < maxChildren; j++) {
-                            x += '<td'+cellStyle+'> </td>';
-                        }
-                    }
-                    x += '</tr>\n';
-                }
-            }
-            if (didHeader) {
-                x += '</table>\n';
-            }
-        }
-        document.getElementById("hot-search-params").innerHTML = x;
-    }
-    function buildSelect(name, onchange, min, max, selected) {
-        var x = '<select name="' + name + '"';
-        if (onchange != null) {
-            x += ' onchange="' + onchange + '"';
-        }
-        x +='>\n';
-        for (var i = min; i <= max; i++) {
-            x += '<option value="' + i + '"';
-            if (i == selected) {
-                x += ' selected';
-            }
-            x += '>' + i + '\n';
-        }
-        x += '</select>';
-        return x;
-    }
-    function validateGuests(form) {
-        if (numRooms < 9) {
-            var missingAge = false;
-            for (var i = 0; i < numRooms; i++) {
-                var numChildren = childrenPerRoom[i];
-                if (numChildren != null && numChildren > 0) {
-                    for (var j = 0; j < numChildren; j++) {
-                        if (childAgesPerRoom[i] == null || childAgesPerRoom[i][j] == null || childAgesPerRoom[i][j] == -1) {
-                            missingAge = true;
-                        }
-                    }
-                }
-            }
-            if (missingAge) {
-                alert(textChildError);
-                return false;
-            } else {
-                return true;
-            }
-        } else {
-            return true;
-        }
-    }
-    function submitGuestInfoForm(form) {
-        if (!validateGuests(form)) {
-            return false;
-        }
-        return true;
-    }
-    function getValue(str, val) {
-        return str.replace(/\?/g, val);
-    }
-//-->
-</script>
-
 					</div>
 
 					<div class="spacer-lg"></div>
@@ -743,22 +231,28 @@ function openCalendar(formName, field) {
                             <div class="col-sm-6 col-md-4">
 								<!-- Widget :: Newsletter -->
 								<div class="widget_newsletter widget widget__footer">
-									<h3 class="widget-title">Get Our Newsletter</h3>
+									<h3 class="widget-title">Stay in the Know</h3>
 									<div class="widget-content">
-										<p>Nulla tincidunt sollicitudin tristique. Sed sed metus malesuada, semper dolor sit amet, eleifend libero. </p>
+										<p>Enter in your email address and we will make sure you're the first to know our latest updates and pet friendly things</p>
+                                        <!-- Begin MailChimp Signup Form -->
+                                    <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+                                    <div id="mc_embed_signup">
+                                    <form action="//hotelhounds.us9.list-manage.com/subscribe/post?u=95e353c625f6aec4ab338ed48&amp;id=3d45b2a870" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                        <div id="mc_embed_signup_scroll row">
+                                            <div class="col-md-8">
+                                                <div class="form-group">
+                                                    <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="Enter your email here..." required>
+                                                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                                    <div style="position: absolute; left: -5000px;"><input type="text" name="b_95e353c625f6aec4ab338ed48_3d45b2a870" tabindex="-1" value=""></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-success btn-block"></div>
+                                        </div>
+                                    </form>
+                                    </div>
 
-										<form action="#" method="POST" role="form">
-											<div class="row">
-												<div class="col-md-8">
-													<div class="form-group">
-														<input type="email" class="form-control" placeholder="Enter your email here...">
-													</div>
-												</div>
-												<div class="col-md-4">
-													<button type="submit" class="btn btn-success btn-block">Subscribe</button>
-												</div>
-											</div>
-										</form>
+<!--End mc_embed_signup-->
+                                        
 									</div>
 								</div>
 								<!-- /Widget :: Newsletter -->
@@ -769,7 +263,7 @@ function openCalendar(formName, field) {
 								<div class="widget_nav_menu widget widget__footer">
 									<h3 class="widget-title-new">HotelHounds</h3>
 									
-                                        Traveling Dogone Happy<br>
+                                        Traveling Doggone Happy<br>
                                         Call us at:</span> +1 (216) 302-4SIT<br>
                                         <a href="#">email: contact@hotelhounds.com</a>
 								</div>

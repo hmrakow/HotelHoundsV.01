@@ -50,7 +50,7 @@ body {
   background-color: #fafafa;
   color: #8c8c8c;
   font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   font-weight: 300;
   margin: 0;
@@ -1328,7 +1328,7 @@ font-weight:bold;
 }
 @media (min-width: 992px) {
   .widget_newsletter .form-group {
-    margin-right: -15px;
+    margin: 0 -15px;
   }
 }
 /* Widget :: Recent Jobs */
@@ -2783,8 +2783,8 @@ div.job_listings li.no_job_listings_found a:hover {
 }
 div.job_listings li.job_listing a img.company_logo,
 div.job_listings li.no_job_listings_found a img.company_logo {
-  width: 64px;
-  height: 64px;
+  width: 84px;
+  height: 84px;
   padding: 2px;
   background: #fff;
   border: 1px solid #ececec;
@@ -2793,7 +2793,7 @@ div.job_listings li.no_job_listings_found a img.company_logo {
 }
 div.job_listings li.job_listing a div.position,
 div.job_listings li.no_job_listings_found a div.position {
-  padding-left: 80px;
+  padding-left: 100px;
   padding-top: 10px;
   float: none;
   width: 100%;
@@ -2819,10 +2819,11 @@ div.job_listings li.no_job_listings_found a div.position .company strong {
 div.job_listings li.job_listing a div.location,
 div.job_listings li.no_job_listings_found a div.location {
   font-size: 14px;
-  padding-top: 10px;
   float: none;
   width: 100%;
   padding-left: 80px;
+  line-height:2em;
+  padding-top:10px;
 }
 @media (min-width: 768px) {
   div.job_listings li.job_listing a div.location,
@@ -2850,7 +2851,7 @@ div.job_listings li.no_job_listings_found a ul.meta {
     float: right;
     text-align: right;
     width: 20%;
-    padding: 20px 0 0 0;
+    padding: 10px 0 0 0;
   }
 }
 div.job_listings li.job_listing a ul.meta li,
@@ -2988,4 +2989,8 @@ div.job_listings li.no_job_listings_found.job_position_featured a ul.meta li {
 
 .position h3 {
 font-weight: bold;
+}
+
+.widget_recent_jobs.widget.widget__sidebar strong {
+color: #333;
 }
